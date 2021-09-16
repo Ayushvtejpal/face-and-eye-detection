@@ -15,7 +15,7 @@ while 1:
             cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,127,255),2)
     cv2.imshow("Ayush",img)
     k=cv2.waitKey(30)& 0xff
-    if k==27:
+    if k==27:  #"esc" key to exit
         break
 cap.release()
 cv2.destroyAllWindows()
